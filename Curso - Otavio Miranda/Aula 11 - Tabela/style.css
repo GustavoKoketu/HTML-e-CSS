@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+table{
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+
+table caption{
+    caption-side: top;
+    text-align: left;
+    font-style: italic;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+tfoot td, table th{
+    background: #ddd
+}
+
+tfoot td{
+    font-style: italic
+}
+
+.responsive-table{
+    max-width: 100%;
+    overflow-x:auto;
+}

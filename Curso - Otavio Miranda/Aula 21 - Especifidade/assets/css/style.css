@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* "Pontuação" da especifidade
+ID                                     
+Classes, atributos e pseudo-classes         
+Elementos e pseudo-elementos  
+
+Especifidade
+empate - depois no texto
+style
+!important
+*/  
+
+#p{
+    /* 1 0 0 */
+    background: red;
+}
+
+.p{
+    /* 0 1 0 */
+    background: yellow;
+}
+
+#p.p{
+    /* 1 1 0 */
+    background: lime;
+}
+
+p#p{
+    /* 1 0 1 */
+    background: blue;
+}
+
+p#p.p{
+    /* 1 1 1 */
+    background: orange;
+}
+
+#b p#p.p{
+    /* 2 1 1 */
+    background: pink;
+}
+
+body#b.b p#p.p{
+    /* 2 2 2 */
+    background: purple; 
+}
+
+body#b.b p#p.p::selection{
+    /* 2 2 3 */
+    background: black; 
+}
+
+body#b.b p#p.p::selection:hover{
+    /* 2 3 3 */
+    background: cyan; 
+}

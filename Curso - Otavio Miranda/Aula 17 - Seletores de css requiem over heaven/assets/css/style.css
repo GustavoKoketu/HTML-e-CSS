@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+[meu-atributo~="valor1"]{
+    color: aqua;
+}
+
+[meu-atributo|="valor"]{
+    color: lime;
+}
+
+[meu-atributo^="setecentos"]{
+    color: yellow;
+}
+
+[meu-atributo$="setecentos"]{
+    color: purple;
+}
+
+[meu-atributo*="see"]{
+    color: orange;
+}
